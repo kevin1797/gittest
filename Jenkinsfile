@@ -5,12 +5,11 @@ pipeline {
       parallel {
         stage('test') {
           steps {
-            sleep 10
             echo 'hello'
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             echo 'world'
           }
